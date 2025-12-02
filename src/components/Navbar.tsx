@@ -29,6 +29,17 @@ function Navbar() {
       <nav className="fixed top-0 right-0 left-0 z-50 bg-black/80">
         <div className="container mx-auto flex h-16 items-center justify-between px-6">
           <h1 className="text-2xl font-bold text-white">AM</h1>
+          <div className="flex gap-4">
+            {navItems.map((navItem) => (
+              <Button
+                key={navItem.id}
+                className="cursor-pointer"
+                onClick={() => scrollToSection(navItem.id)}
+              >
+                {navItem.label}
+              </Button>
+            ))}
+          </div>
         </div>
       </nav>
     </>
