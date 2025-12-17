@@ -1,4 +1,4 @@
-import { ArrowBigRightDash } from 'lucide-react';
+import { FaArrowRight } from 'react-icons/fa6';
 import { DividerWithLeftTitle } from './common';
 import { Card } from './ui/card';
 
@@ -23,11 +23,14 @@ const experienceItems = [
 
 function Experience() {
   return (
-    <section id="experience" className="pt-16 text-black">
+    <section
+      id="experience"
+      className="flex flex-col items-center pt-16 text-black"
+    >
       <DividerWithLeftTitle title="Experience" />
 
       {experienceItems.map((item, index) => (
-        <Card key={index} className="m-4">
+        <Card key={index} className="m-4 w-3/5">
           <div className="px-4">
             <div className="flex w-full items-start justify-between">
               <div className="flex items-center gap-4">
@@ -46,7 +49,7 @@ function Experience() {
                   key={bulletIndex}
                   className="flex items-center gap-2 text-left"
                 >
-                  <ArrowBigRightDash />
+                  <FaArrowRight />
                   {bulletText}
                 </div>
               ))}

@@ -4,7 +4,7 @@ interface DividerWithLeftTitleProps {
 
 export function DividerWithLeftTitle({ title }: DividerWithLeftTitleProps) {
   return (
-    <div className="flex items-center">
+    <div className="flex w-4/5 items-center">
       <span className="mx-4 shrink text-gray-600">{title}</span>
       <div className="grow border-t border-gray-300" />
     </div>

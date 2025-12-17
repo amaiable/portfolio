@@ -40,7 +40,7 @@ const projectItems = [
 
 function Projects() {
   return (
-    <section id="projects">
+    <section id="projects" className="flex flex-col items-center">
       <DividerWithLeftTitle title="Projects" />
 
       <div className="flex flex-col items-center">

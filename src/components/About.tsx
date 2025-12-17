@@ -2,7 +2,7 @@ import { DividerWithLeftTitle } from './common';
 
 function About() {
   return (
-    <section id="about" className="pt-16 text-black">
+    <section id="about" className="flex flex-col items-center pt-16 text-black">
       <div className="font-bold">
         Hi! I'm Alex and I'm a software engineer. Welcome to my corner of the
         internet!
