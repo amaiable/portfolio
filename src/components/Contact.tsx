@@ -7,7 +7,7 @@ function Contact() {
       <DividerWithLeftTitle title="Contact" />
       <div className="py-8">
         Let's stay in touch!
-        <div className="flex gap-4">
+        <div className="flex justify-center gap-4">
           <a>
             <FaLinkedin size={40} />
           </a>
