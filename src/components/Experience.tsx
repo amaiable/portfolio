@@ -1,5 +1,6 @@
+import { ArrowBigRightDash } from 'lucide-react';
 import { DividerWithLeftTitle } from './common';
-import { Card, CardTitle, CardContent } from './ui/card';
+import { Card } from './ui/card';
 
 const experienceItems = [
   {
@@ -41,8 +42,12 @@ function Experience() {
 
             <div className="mt-4">
               {item.bulletedItems.map((bulletText, bulletIndex) => (
-                <div key={bulletIndex} className="text-left">
-                  • {bulletText}
+                <div
+                  key={bulletIndex}
+                  className="flex items-center gap-2 text-left"
+                >
+                  <ArrowBigRightDash />
+                  {bulletText}
                 </div>
               ))}
             </div>
