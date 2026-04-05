@@ -43,15 +43,15 @@ function Projects() {
     <section id="projects" className="flex flex-col items-center">
       <DividerWithLeftTitle title="Projects" />
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center w-full">
         {projectItems.map((item, index) => (
-          <Card key={index} className="m-4 w-3/5">
-            <div className="px-4">
-              <div className="flex flex-col gap-1 text-left">
-                <img src={item.projectImageLink} />
+          <Card key={index} className="my-4 w-full md:w-4/5 lg:w-3/5">
+            <div className="px-4 py-4">
+              <div className="flex flex-col gap-2 text-left">
+                <img src={item.projectImageLink} className="w-full max-w-full rounded-md object-cover" />
                 <div className="font-bold">{item.projectTitle}</div>
                 <div>{item.projectDescription}</div>
-                <div className="flex gap-2">
+                <div className="flex flex-wrap gap-2 pt-2">
                   {item.projectLinks.map((linkItem, linkIndex) => (
                     <a href={linkItem.link}>
                       <Card

@@ -26,10 +26,10 @@ function Navbar() {
   }
 
   return (
-    <nav className="fixed top-0 right-0 left-0 bg-black/80">
-      <div className="container mx-auto flex h-16 items-center justify-between px-6">
+    <nav className="fixed top-0 right-0 left-0 bg-black/80 z-50">
+      <div className="container mx-auto flex py-4 items-center justify-between px-4 sm:px-6 flex-wrap gap-4">
         <h1 className="text-2xl font-bold text-white">AM</h1>
-        <div className="flex gap-4">
+        <div className="flex flex-wrap items-center justify-center sm:justify-end gap-2 sm:gap-4">
           {navItems.map((navItem) => (
             <Button
               key={navItem.id}

@@ -55,7 +55,7 @@ function Experience() {
     >
       <DividerWithLeftTitle title="Experience" />
 
-      <div className="flex justify-center gap-4">
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-4 w-full">
         <Card
           className="w-20"
           onClick={() => setSelectedSection(workExperienceItems)}
@@ -77,9 +77,9 @@ function Experience() {
       </div>
 
       {selectedSection.map((item, index) => (
-        <Card key={index} className="m-4 w-3/5">
-          <div className="px-4">
-            <div className="flex w-full items-start justify-between">
+        <Card key={index} className="my-4 w-full md:w-4/5 lg:w-3/5">
+          <div className="px-4 py-4">
+            <div className="flex w-full flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
               <div className="flex items-center gap-4">
                 <img src={item.logoLink} className="h-12 w-12" />
                 <div className="flex flex-col gap-1">

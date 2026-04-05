@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 
 function App() {
   return (
-    <div>
+    <div className="mx-auto w-full max-w-5xl px-4 md:px-8">
       <Navbar />
       <About />
       <Experience />
